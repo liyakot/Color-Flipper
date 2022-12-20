@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300;1,400&display=swap');
 
+:root {
+    --red-color: rgb(211, 27, 27);
+    --white-color: rgb(255, 255, 255);
+    --gray-bg-color: rgb(39, 39, 39);
+}
+
+button {
+    text-transform: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -16,14 +30,14 @@ body {
 }
 
 .nav {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     box-shadow: 0 0 10px rgb(87, 85, 85);
     height: 4rem;
     align-items: center;
     padding: 0 15vw 0 15vw;
     font-size: 1.2rem;
     font-style: italic;
-    color: rgb(211, 27, 27);
+    color: var(--red-color);
 }
 
 .nav-links {
@@ -41,8 +55,8 @@ body {
     font-weight: 600;
 }
 
-.nav-links a:hover {
-    color: rgb(211, 27, 27)
+.nav-links a:hover, .nav-links a:focus {
+    color: var(--red-color);
 }
 
 .main {
@@ -51,12 +65,12 @@ body {
 }
 
 .main h2 {
-    background-color: rgb(39, 39, 39);
+    background-color: var(--gray-bg-color);
     width: auto;
     max-width: 800px;
     height: auto;
     min-height: 70px;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     font-size: 30px;
     padding: 20px;
     border-radius: 20px;
@@ -72,16 +86,16 @@ body {
     font-weight: 600;
     margin-top: 3.3rem;
     padding: .7rem 1.1rem;
-    border: 2px solid rgb(39, 39, 39);
+    border: 2px solid var(--gray-bg-color);
     border-radius: 10px;
     transition: background-color .6s;
-    color: rgb(211, 27, 27);
+    color: var(--red-color);
 }
 
 .btn:hover {
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     cursor: pointer;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--gray-bg-color);
     transition: 0.6s;
 }
 
