@@ -126,6 +126,10 @@ body {
         border-radius: 25px;
         flex-direction: column;
     }
+
+    .main {
+        margin-top: 25vh;
+    }
 }
 
 @media screen and (max-width: 340px) {
